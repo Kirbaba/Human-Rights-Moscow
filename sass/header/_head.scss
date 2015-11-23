@@ -1,0 +1,90 @@
+.header {
+	display: block;
+	width: 100%;
+	background-image: url('../img/header_bg.png');
+	background-repeat: no-repeat;
+	background-position: 50% 100%;
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+	&--logo {
+		display: block;
+		width: 51px;
+		height: 61px;
+		margin: 10px auto;
+	}
+	h1 {
+		text-align: center;
+		color: $main;
+		font-size: 36px;
+		text-transform: uppercase;
+		margin-bottom: 15px;
+	}
+	&__menu {
+		margin: 15px 0;
+		display: block;
+		ul {
+			display: block;
+			float: left;
+			li {
+				display: block;
+				float: left;
+				margin-right: 25px;
+				width: 240px;
+				height: 46px;
+				@include border-radius(3px);
+				@include background-clip(padding-box);
+				background-color: #fff;
+				line-height: 46px;
+				padding: 10px 0;
+				&:last-of-type {
+					margin-right: 0;
+				}
+				a {
+					text-align: center;
+					display: inline-block;
+					vertical-align: middle;
+					color: $main;
+					text-transform: uppercase;
+					font-size: 18px;
+					font-family: $neo-reg;
+					line-height: normal;
+					i {
+						display: inline-block;
+						float: left;						
+						margin-right: 10px;
+						margin-left: 10px;
+						line-height: normal;
+						background-repeat: no-repeat;
+						vertical-align: middle;
+						background-image: url('../img/menu-map.png');
+					}				
+				}
+			}
+		}
+		&--authorized {
+			width: 20px;
+			background-size: 1350%;
+			background-position: -20px -1px;
+			height: 24px;
+		}
+		&--justic {
+			width: 28px;
+			height: 21px;
+		}
+		&--adult {
+			width: 21px;
+			height: 25px;
+		}
+		&--children {
+			width: 24px;
+			height: 27px;
+
+		}
+		&--phone {
+			width: 18px;
+			height: 24px;
+
+		}
+	}
+}

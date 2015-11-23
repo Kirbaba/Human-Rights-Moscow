@@ -1,0 +1,23 @@
+$neo-reg: 'NeoSansProRegular';
+$neo-bold: 'NeoSansProBold';
+$arial: Arial, Helvetica, sans-serif ;
+
+@font-face {
+    font-family: 'NeoSansProRegular';
+    src: url('../fonts/NeoSansProRegular.eot');
+    src: url('../fonts/NeoSansProRegular.eot') format('embedded-opentype'),
+         url('../fonts/NeoSansProRegular.woff2') format('woff2'),
+         url('../fonts/NeoSansProRegular.woff') format('woff'),
+         url('../fonts/NeoSansProRegular.ttf') format('truetype'),
+         url('../fonts/NeoSansProRegular.svg#NeoSansProRegular') format('svg');
+}
+
+@font-face {
+    font-family: 'NeoSansProBold';
+    src: url('../fonts/NeoSansProBold.eot');
+    src: url('../fonts/NeoSansProBold.eot') format('embedded-opentype'),
+         url('../fonts/NeoSansProBold.woff2') format('woff2'),
+         url('../fonts/NeoSansProBold.woff') format('woff'),
+         url('../fonts/NeoSansProBold.ttf') format('truetype'),
+         url('../fonts/NeoSansProBold.svg#NeoSansProBold') format('svg');
+}

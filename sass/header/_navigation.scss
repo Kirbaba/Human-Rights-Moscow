@@ -1,0 +1,68 @@
+.navigation {
+	background-color: $main;	
+	position: relative;
+	display: block;
+	width: 100%;
+	.navigation__controls {
+		display: block;
+		float: left;
+		position: absolute;
+		a {
+			display: block;
+			float: left;
+			margin-right: 27px;
+			padding: 7px 0;
+			i {
+				display: block;
+				background-repeat: no-repeat;
+				background-position: center;
+				-webkit-background-size: 100%;
+				     -o-background-size: 100%;
+				        background-size: 100%;
+			}
+		}
+		&--home {
+			background-image: url("../img/home.png");
+			width: 17px;
+			height: 16px;
+		}
+		&--search {
+			background-image: url("../img/search.png");
+			width: 17px;
+			height: 16px;
+		}
+		&--sitemap {
+			background-image: url("../img/sitemap.png");
+			width: 26px;
+			height: 16px;
+		}
+		&--cecutient {
+			background-image: url("../img/cecutient.png");
+			width: 23px;
+			height: 16px;
+		}
+	}
+	ul {
+		display: block;
+		position: relative;
+		float: right;
+		li {
+			display: inline-block;
+			font-size: 0;			
+			a {
+				color: #FFF;
+				text-transform: uppercase;
+				font-size: 14px;
+				font-family: $arial;
+				padding: 0 15px;
+				height: 32px;
+				display: block;
+				line-height: 32px;
+				&:hover {
+					background-color: #FFF;
+					color: $main;
+				}
+			}
+		}
+	}
+}

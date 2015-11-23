@@ -1,6 +1,5 @@
-body {
-	
-}
+$main: #35618f;
+
 a {
 	text-decoration: none;
 	&:hover, &:focus, &:active{
@@ -8,8 +7,20 @@ a {
 	}
 }
 
+h1, h2 {
+	font-family: $neo-bold;
+}
+h3, h4, h5 {
+	font-family: $neo-reg;
+}
+
+p {
+	font-family: $arial;
+}
+
 ul {
 	list-style-type: none;
+	padding: 0;
 }
 
 .block_title {
@@ -34,25 +45,33 @@ ul {
 	text-align: right;
 }
 
-@media (min-width: 1920px) {
-  .container {
-    width: 1100px;
-  }
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  @include inside-pad;
 }
 
-@media (min-width: 1400px) {
-  .container {
-    width: 1000px;
-  }
-}
 
-@media (min-width: 1000px) {
+
+
+
+@media only screen and (min-width: 1000px) {
   .container {
     width: 759px;
   }
 }
 
+@media only screen and (min-width: 1400px) {
+  .container {
+    width: 1000px;
+  }
+}
 
+@media only screen and (min-width: 1920px) {
+  .container {
+    width: 1300px;
+  }
+}
 
 
 
